@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image:
+            url('2I3c.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px; /* Increase top and bottom padding */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle underglow shadow */
+            transition: all 0.3s;
+            position: fixed; /* Fixed position to stay on top */
+            top: 0;
+            width: 100%; /* Full width */
+            z-index: 1; /* Ensure the navbar is on top of other content */
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px; /* Increased spacing between sections */
+        }
+
+        .navbar li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Arial', sans-serif; /* Modern font family */
+            font-size: 18px;
+            font-weight: 600; /* Bolder text */
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        .navbar li a img {
+            margin-right: 10px; /* Add spacing between image and text */
+            max-width: 25px; /* Set the desired image size */
+        }
+
+        .navbar li a:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* Darker background on hover */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="home.png" alt="Home Icon"> Home
+                </a>
+            </li>
+            <li>
+                <a href="games.html">
+                    <img src="pngtree-game-control-line-icon-vector-png-image_1904129-removebg-preview.png" alt="Games"> Services
+                </a>
+            </li>
+            <li>
+                <a href="apps.html">
+                    <img src="pngtree-app-icon-isolated-on-abstract-background-png-image_1848502__1_-removebg-preview.png" alt="Portfolio Icon"> Apps
+                </a>
+            </li>
+            <li>
+                <a href="proxies.html">
+                    <img src="3771343.png" alt="Contact Icon"> Proxies
+                </a>
+            </li>
+            <li>
+                <a href="changelog.html">
+                    <img src="5278663.png" alt="Contact Icon"> Changelog
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <img src="239262 (1).png" alt="Contact Icon"> Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading Box</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 24px;
+        }
+
+        .search-bar {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-input {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 18px;
+            outline: none;
+            width: 100%;
+        }
+
+        .box-container-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .box-container {
+            width: calc(15% - 20px);
+            max-width: 150px;
+            background: rgba(32, 34, 36, 0.7);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: scale(1);
+            transform-origin: center center;
+            text-align: center;
+        }
+
+        .box-image {
+            max-width: 90px;
+            max-height: 90px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .box-description {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .play-button {
+            background-color: #c0c2c4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .box-container:hover .play-button {
+            transform: scale(1.1);
+        }
+
+        .box-container:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
+            transform: scale(1.05);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0px 0px 30px rgba(0, 123, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.4);
+            }
+        }
+
+        .box-container:hover {
+            animation: glow 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar"></div>
+    
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search...">
+    </div>
+
+    <div class="box-container-wrapper">
+        <a href="https://galactic-mu.vercel.app/gfiles/among-us/" class="box-container" id="box1">
+            <img src="unnamed.jpg" alt="Among Us" class="box-image">
+            <div class="box-title">Among Us</div>
+            <div class="box-description">Among Us Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+        
+        <a href="https://galactic-mu.vercel.app/gfiles/eaglercraft/" class="box-container" id="box2">
+            <img src="unnamed (2).png" alt="Minecraft" class="box-image">
+            <div class="box-title">Minecraft</div>
+            <div class="box-description">Minecraft Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+
+        <!-- Add more boxes here -->
+        <a href="https://galactic-mu.vercel.app/gfiles/retro-bowl/" class="box-container" id="box3">
+            <img src="unnamed (3).png" alt="Retrobowl" class="box-image">
+            <div class="box-title">Retrobowl</div>
+            <div class="box-description">Retrobowl Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+
+        <a href="https://galactic-mu.vercel.app/gfiles/cookieclicker/" class="box-container" id="box4">
+            <img src="download (6).jpeg" alt="Cookie Clicker" class="box-image">
+            <div class="box-title">Cookie Clicker</div>
+            <div class="box-description">Cookie Clicker Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+
+        <a href="https://galactic-mu.vercel.app/gfiles/motox3m/" class="box-container" id="box5">
+            <img src="download (8).jpeg" alt="Moto X3M" class="box-image">
+            <div class="box-title">Moto X3M</div>
+            <div class="box-description">Moto X3M Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+        
+        <a href="https://galactic-mu.vercel.app/gfiles/slope/" class="box-container" id="box6">
+            <img src="images.jpeg" alt="Slope" class="box-image">
+            <div class="box-title">Slope</div>
+            <div class="box-description">Slope Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+      
+        <a href="https://galactic-mu.vercel.app/gfiles/subway-surfers/" class="box-container" id="box7">
+            <img src="unnamed (4).png" alt="Subway Surfers" class="box-image">
+            <div class="box-title">Subway Surfers</div>
+            <div class="box-description">Subway Surfers Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+        
+        <a href="https://galactic-mu.vercel.app/gfiles/madalin-cars-2/" class="box-container" id="box8">
+            <img src="30567.jpg" alt="Madalin Stunt Cars 2" class="box-image">
+            <div class="box-title">Madalin Stunt Cars 2</div>
+            <div class="box-description">Madalin Stunt Cars 2 Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+        
+        <a href="https://galactic-mu.vercel.app/gfiles/temple-run-2/" class="box-container" id="box9">
+            <img src="Temple_Run_2-removebg-preview.png" alt="Temple Run 2" class="box-image">
+            <div class="box-title">Temple Run 2</div>
+            <div class="box-description">Temple Run 2 Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+
+        <a href="https://odd-pvp.vercel.app/play/basketball-stars/" class="box-container" id="box10">
+            <img src="bc02c9cdfc5b424ddf343b01edf791ce.avif" alt="BasketBall Stars" class="box-image">
+            <div class="box-title">BasketBall Stars</div>
+            <div class="box-description">BasketBall Stars Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+
+        <a href="https://galactic-mu.vercel.app/gfiles/paperio2/" class="box-container" id="box11">
+            <img src="unnamed (5).png" alt="Paper.io 2" class="box-image">
+            <div class="box-title">Paper.io 2</div>
+            <div class="box-description">Paper.io 2 Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+
+        <a href="https://galactic-mu.vercel.app/gfiles/sm64/" class="box-container" id="box12">
+            <img src="mario-64---button-1559263987447.jpg" alt="Super Mario 64" class="box-image">
+            <div class="box-title">Super Mario 64</div>
+            <div class="box-description">Super Mario 64 Unblocked</div>
+            <button class="play-button">Play</button>
+        </a>
+    </div>
+
+    <div style="height: 2000px; background-color: #f0f0f0;"></div>
+
+    <script>
+        // JavaScript to control box animations
+        const boxes = document.querySelectorAll('.box-container');
+
+        function fadeInBox(index) {
+            if (index < boxes.length) {
+                boxes[index].style.opacity = '1';
+                setTimeout(() => {
+                    fadeInBox(index + 1);
+                }, 300); // Adjust the delay between box appearances (in milliseconds)
+            }
+        }
+
+        // Trigger the animation when the page loads
+        window.addEventListener('load', function() {
+            fadeInBox(0);
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-input');
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            boxes.forEach(box => {
+                const title = box.querySelector('.box-title').textContent.toLowerCase();
+                if (title.startsWith(searchTerm)) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

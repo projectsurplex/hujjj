@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image:
+            url('2I3c.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px; /* Increase top and bottom padding */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle underglow shadow */
+            transition: all 0.3s;
+            position: fixed; /* Fixed position to stay on top */
+            top: 0;
+            width: 100%; /* Full width */
+            z-index: 1; /* Ensure the navbar is on top of other content */
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px; /* Increased spacing between sections */
+        }
+
+        .navbar li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Arial', sans-serif; /* Modern font family */
+            font-size: 18px;
+            font-weight: 600; /* Bolder text */
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        .navbar li a img {
+            margin-right: 10px; /* Add spacing between image and text */
+            max-width: 25px; /* Set the desired image size */
+        }
+
+        .navbar li a:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* Darker background on hover */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="home.png" alt="Home Icon"> Home
+                </a>
+            </li>
+            <li>
+                <a href="games.html">
+                    <img src="pngtree-game-control-line-icon-vector-png-image_1904129-removebg-preview.png" alt="Games"> Services
+                </a>
+            </li>
+            <li>
+                <a href="apps.html">
+                    <img src="pngtree-app-icon-isolated-on-abstract-background-png-image_1848502__1_-removebg-preview.png" alt="Portfolio Icon"> Apps
+                </a>
+            </li>
+            <li>
+                <a href="proxies.html">
+                    <img src="3771343.png" alt="Contact Icon"> Proxies
+                </a>
+            </li>
+            <li>
+                <a href="changelog.html">
+                    <img src="5278663.png" alt="Contact Icon"> Changelog
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <img src="239262 (1).png" alt="Contact Icon"> Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Link</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Style for the container */
+        .image-container {
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        /* Style for the image */
+        .image-container img {
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect */
+        .image-container:hover img {
+            transform: scale(1.1); /* Increase the size on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Replace 'your-image-url.jpg' with the URL of your image -->
+    <a href="discord.html" class="image-container">
+        <img src="download.png" alt="Clickable Image">
+    </a>
+</body>
+</html>
